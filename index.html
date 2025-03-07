@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <header>
+        <div class="language-switcher">
+            <a href="?lang=cs"><img src="./images/czech-flag.png" alt="Czech" class="flag-icon"></a>
+            <a href="?lang=en"><img src="./images/uk-flag.png" alt="English" class="flag-icon"></a>
+        </div>
+        
+        <div class="humburger">
+            <i class="fa-solid fa-bars-staggered" data-visible="true"></i>
+            <i class="fa-solid fa-xmark" data-visible="false"></i>
+        </div>
+        <nav class="container navbar">
+
+
+           
+
+        
+            <ul class="nav-links" data-visible="false">
+                <li><a href="#About" data-lang="en">My Story</a><a href="#About" data-lang="cs" style="display: none;">Můj příběh</a></li>
+                <li><a href="#Skills" data-lang="en">Skills</a><a href="#Skills" data-lang="cs" style="display: none;">Dovednosti</a></li>
+                <li><a href="#portfolio" data-lang="en">Portfolio</a><a href="#portofolio" data-lang="cs" style="display: none;">Portfolio</a></li>
+                <li><a href="#Hobbies" data-lang="en">Hobbies</a><a href="#Hobbies" data-lang="cs" style="display: none;">Koníčky</a></li>
+                <a class="btn" href="#contact" data-lang="en">Contact Me</a>
+                <a class="btn" href="#contact" data-lang="cs" style="display: none;">Kontakt</a>
+            </ul>
+            
+        </nav>
+    </header>
+    
+    <main>
+
+
+
+
+       <section class="hero"> 
+        <div class="bg-img">
+            <img src="./images/bg.png" alt="">
+        </div>
+    <div class="hero-top container">
+        <div class="content">
+            <div class="info">
+                <h1 data-lang="en">Hi, I am</h1>
+                <h1 data-lang="cs" style="display: none;">Jsem</h1>
+            
+                <h2>Martin Kafka</h2>
+            
+                <h6 data-lang="en">Data Analyst</h6>
+                <h6 data-lang="cs" style="display: none;">Datový analytik</h6>
+            </div>
+            
+            <div class="contact-me">
+                <a href="https://api.whatsapp.com/send/?phone=%2B420739107540" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/martin-kafka-495268251" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/makafkartin88" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="person-img">
+            <img src="./images/person.png" alt="person">
+        </div>
+    </div>
+</section>
+
+        
+
+
+
+
+
+<section class="BERRIES">
+    <h4 data-lang="en">WHO AM I</h4>
+    <h4 data-lang="cs" style="display: none;">KDO JSEM</h4>
+
+    <p data-lang="en">
+        I’m Martin Kafka, a 25-year-old university student from the Czech Republic with a strong passion for data analysis. 
+        My expertise lies in data wrangling, statistical modeling, and business analytics, which I use to drive insights 
+        and enhance decision-making. With a solid foundation in computing for data science and a keen interest in machine learning, 
+        I strive to transform raw data into meaningful stories.
+        <br>
+        🔹 Experienced in ETL processes, SQL, and Python<br>
+        🔹 Interested in predictive analytics & geospatial data<br>
+        🔹 Enthusiastic about data-driven solutions for real-world problems
+    </p>
+
+    <p data-lang="cs" style="display: none;">
+        Jsem Martin Kafka, 25letý student z České republiky se silnou vášní pro analýzu dat. 
+        Zaměřuji se na datové wranglování, statistické modelování a business analytiku, které využívám k získávání cenných poznatků a zlepšování rozhodovacích procesů. 
+        Mám pevné základy v oblasti výpočetní techniky pro datovou vědu a hluboký zájem o strojové učení, díky kterému se snažím přetvářet surová data do smysluplných příběhů.
+        <br>
+        🔹 Zkušenosti s ETL procesy, SQL a Pythonem<br>
+        🔹 Zájem o prediktivní analytiku a geoprostorová data<br>
+        🔹 Nadšenec pro datově řízená řešení skutečných problémů
+    </p>
+</section>
+
+<section class="aboutme container" id="About">
+    <div class="header-info">
+        <h4 data-lang="en">MY STORY</h4>
+        <h4 data-lang="cs" style="display: none;">MŮJ PŘÍBĚH</h4>
+
+        <p data-lang="en"><i>
+            My academic journey began in nuclear physics, where I struggled with the abstract nature of numbers—I couldn’t touch them, visualize them, or fully grasp their meaning. 
+            This led me to transition into data analysis and statistics, where I found my passion in uncovering patterns, making predictions, and drawing meaningful insights from raw data.
+            <br><br>
+            For my Master’s studies, I moved to Bolzano, Italy, where I delved deeper into problem-solving, advanced machine learning and deep learning techniques, and honed my skills in data visualization. 
+            This international experience not only expanded my technical expertise but also reinforced my ability to approach complex challenges with a structured and analytical mindset.
+        </i></p>
+
+        <p data-lang="cs" style="display: none;"><i>
+            Moje akademická cesta začala studiem jaderné fyziky, kde jsem bojoval s abstraktní povahou čísel—nemohl jsem se jich dotknout, vizualizovat si je, ani je plně pochopit. 
+            To mě přivedlo k přechodu na analýzu dat a statistiku, kde jsem našel svou vášeň v odhalování vzorců, predikci a vytváření smysluplných závěrů ze surových dat.
+            <br><br>
+            Pro magisterské studium jsem se přestěhoval do Bolzana v Itálii, kde jsem se hlouběji ponořil do řešení problémů, pokročilých technik strojového a hlubokého učení a zdokonalil své dovednosti ve vizualizaci dat. 
+            Tato mezinárodní zkušenost mi nejen rozšířila technické znalosti, ale také posílila mou schopnost strukturovaně a analyticky přistupovat ke složitým výzvám.
+        </i></p>
+
+        <img src="./images/separatorBlack 1.png" alt="">
+    </div>
+</section>
+
+
+
+
+<section class="skills container" id="Skills">
+    <div class="header-info">
+        <h4 data-lang="en">SKILLS</h4>
+        <h4 data-lang="cs" style="display: none;">DOVEDNOSTI</h4>
+    </div>
+
+    <div class="grid-about">
+        <div class="development columns">
+            <h6 data-lang="en">Data Analysis</h6>
+            <h6 data-lang="cs" style="display: none;">Analýza dat</h6>
+            <p data-lang="en">
+                I specialize in extracting valuable insights from data through statistical modeling, machine learning, and business analytics. 
+                I primarily work with R and Python for both analytical and visualization purposes, ensuring data-driven decision-making.
+            </p>
+            <p data-lang="cs" style="display: none;">
+                Specializuji se na získávání cenných poznatků z dat pomocí statistického modelování, strojového učení a business analytiky. <br>
+                Pracuji převážně s jazyky R a Python pro analýzu i vizualizaci dat, <br>což umožňuje efektivní rozhodování založené na datech.
+            </p>
+        </div>
+        <div class="maintenance columns">
+            <h6 data-lang="en">Leadership</h6>
+            <h6 data-lang="cs" style="display: none;">Vedení týmu</h6>
+            <p data-lang="en">
+                Through my experience as a sports team coach, a member of a grant project, and a musician in a band, 
+                I have developed strong leadership and communication skills. I excel at problem-solving, team collaboration, 
+                and decision-making, ensuring efficiency and a structured approach in dynamic environments.
+            </p>
+            <p data-lang="cs" style="display: none;">
+                Díky své zkušenosti jako trenér sportovního týmu, člen grantového projektu a hudebník v kapele 
+                jsem si rozvinul silné dovednosti v oblasti vedení a komunikace. Vynikám v řešení problémů, spolupráci v týmu 
+                a rozhodování, což zajišťuje efektivitu a strukturovaný přístup v dynamickém prostředí.
+            </p>
+        </div>
+    </div>
+
+    <div class="using-now">
+        <h4 data-lang="en">USING NOW:</h4>
+        <h4 data-lang="cs" style="display: none;">AKTUÁLNĚ POUŽÍVÁM:</h4>
+        <div class="grid-skills">
+            <div class="grid-item item1">
+                <img src="./images/python.png" alt="">
+                <h6>Python</h6>
+            </div>
+            <div class="grid-item item2">
+                <img src="./images/r.svg" alt="">
+                <h6>R</h6>
+            </div>
+            <div class="grid-item item3">
+                <img src="./images/powerbi.png" alt="">
+                <h6>PowerBI</h6>
+            </div>
+            <div class="grid-item item4">
+                <img src="./images/office.svg" alt="">
+                <h6>Microsoft Office</h6>
+            </div>
+            <div class="grid-item item5">
+                <img src="./images/sql.svg" alt="">
+                <h6>SQL</h6>
+            </div>
+            <div class="grid-item item6">
+                <img src="./images/Git-Icon-1788C 1.png" alt="">
+                <h6>Git</h6>
+            </div>
+        </div>
+    </div>
+
+    <div class="other-skills">
+        <h4 data-lang="en">LANGUAGES:</h4>
+        <h4 data-lang="cs" style="display: none;">JAZYKY:</h4>
+        <div class="grid-skills">
+            <div class="grid-item item1">
+                <img src="./images/czechia.png" alt="">
+                <h6 data-lang="en">CZECH - native speaker</h6>
+                <h6 data-lang="cs" style="display: none;">ČEŠTINA - rodilý mluvčí</h6>
+            </div>
+            <div class="grid-item item2">
+                <img src="./images/eng.svg" alt="">
+                <h6 data-lang="en">ENGLISH - Full professional proficiency</h6>
+                <h6 data-lang="cs" style="display: none;">ANGLIČTINA - profesionální znalost</h6>
+            </div>
+            <div class="grid-item item3">
+                <img src="./images/german.png" alt="">
+                <h6 data-lang="en">GERMAN - B1</h6>
+                <h6 data-lang="cs" style="display: none;">NĚMČINA - B1</h6>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="portfolio" id="portfolio">
+    <div class="header-img"></div>
+
+    <br><br>
+
+    <!-- EDUCATION SECTION -->
+    <div class="portfolio-section">
+        <h4 data-lang="en">EDUCATION</h4>
+        <h4 data-lang="cs" style="display: none;">VZDĚLÁNÍ</h4>
+        <br>
+        <div class="portfolio-item">
+            <a href="https://www.unibz.it/en/faculties/engineering/master-computing-data-science/" target="_blank">
+                <img src="./images/unibz.png" alt="Unibz Logo" class="portfolio-logo">
+            </a>
+            <div class="portfolio-info">
+                <p><strong>2022 - 2025</strong> | <span data-lang="en">MSc in Computing for Data Science</span>
+                <span data-lang="cs" style="display: none;">Magisterský titul v oboru Výpočetní Technika pro Datovou Vědu</span></p>
+                <p>Free University of Bozen-Bolzano</p>
+                <p data-lang="en">Final Grade: TBD</p>
+                <p data-lang="cs" style="display: none;">Závěrečná známka: TBD</p>
+            </div>
+        </div>
+        <br>
+        <div class="portfolio-item">
+            <a href="https://fis.vse.cz/bakalarske-studium/bakalarske-programy/program-matematicke-metody-v-ekonomii/" target="_blank">
+                <img src="./images/vse.png" alt="VŠE Logo" class="portfolio-logo">
+            </a>
+            <div class="portfolio-info">
+                <p><strong>2019 - 2022</strong> | <span data-lang="en">BSc in Data Analysis and Modelling</span>
+                <span data-lang="cs" style="display: none;">Bakalářský titul v oboru Datová Analýza a Modelování</span></p>
+                <p>Prague University of Economics and Business</p>
+                <p data-lang="en">Final Grade: Red diploma (Average below 1.5)</p>
+                <p data-lang="cs" style="display: none;">Závěrečná známka: Červený diplom (průměr pod 1.5)</p>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <!-- PROJECTS & PUBLICATIONS SECTION -->
+    <div class="portfolio-section">
+        <h4 data-lang="en">PROJECTS & PUBLICATIONS</h4>
+        <h4 data-lang="cs" style="display: none;">PROJEKTY & PUBLIKACE</h4>
+        <br>
+
+        <div class="portfolio-item">
+            <a href="https://fis.vse.cz/tvurci-cinnost/informace/" target="_blank">
+                <img src="./images/vse.png" alt="Research Paper" class="portfolio-logo">
+            </a>
+            <div class="portfolio-info">
+                <p><strong>2020 - 2021</strong> | <span data-lang="en">IGA - Financing of Higher Education</span>
+                <span data-lang="cs" style="display: none;">IGA - Financování vysokého školství</span></p>
+                <p data-lang="en">Impact of financing on quality of education in higher education.</p>
+                <p data-lang="cs" style="display: none;">Dopad financování na kvalitu vysokoškolského vzdělávání.</p>
+            </div>
+        </div>
+        <br>
+
+        <div class="portfolio-item">
+            <a href="https://vskp.vse.cz/90868_analyza-spokojenosti-a-uspesnosti-studentu-podle-publikacni-aktivity-pedagogu-na-vse?title=V&page=11" target="_blank">
+                <img src="./images/vse.png" alt="Forecasting Model" class="portfolio-logo">
+            </a>
+            <div class="portfolio-info">
+                <p><strong>2022</strong> | <span data-lang="en">Bachelor Thesis</span>
+                <span data-lang="cs" style="display: none;">Bakalářská práce</span></p>
+                <p data-lang="en">Analyzing the relationship between teachers' publication activity and their evaluations.</p>
+                <p data-lang="cs" style="display: none;">Analýza vztahu mezi publikační činností učitelů a jejich hodnocením.</p>
+            </div>
+        </div>
+        <br>
+
+        <div class="portfolio-item">
+            <a href="https://www.universitas.cz/forum/11318-kdo-dobre-bada-dobre-uci-mytus-nebo-ne" target="_blank">
+                <img src="./images/universitas.png" alt="Forecasting Model" class="portfolio-logo">
+            </a>
+            <div class="portfolio-info">
+                <p><strong>2022</strong> | <span data-lang="en">Publication - He who researches well, teaches well: myth or not?</span>
+                <span data-lang="cs" style="display: none;">Publikace - Kdo dobře bádá, dobře učí: mýtus nebo realita?</span></p>
+                <p data-lang="en">An article exploring the connection between research activity and teaching quality.</p>
+                <p data-lang="cs" style="display: none;">Článek zkoumající souvislost mezi výzkumnou činností a kvalitou výuky.</p>
+            </div>
+        </div>
+        <br>
+
+        <div class="portfolio-item">
+            <a href="https://www.wuerth.it/" target="_blank">
+                <img src="./images/wurth.png" alt="Würth Project" class="portfolio-logo">
+            </a>
+            <div class="portfolio-info">
+                <p><strong>2025</strong> | <span data-lang="en">Capstone Project</span>
+                <span data-lang="cs" style="display: none;">Capstone projekt</span></p>
+                <p data-lang="en">Analyzing geospatial influence on product ordering at Würth Italia.</p>
+                <p data-lang="cs" style="display: none;">Analýza geoprostorového vlivu na objednávání produktů ve společnosti Würth Italia.</p>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <!-- WORK EXPERIENCE SECTION -->
+    <div class="portfolio-section">
+        <h4 data-lang="en">WORK EXPERIENCE</h4>
+        <h4 data-lang="cs" style="display: none;">PRACOVNÍ ZKUŠENOSTI</h4>
+        <br>
+        <div class="portfolio-item">
+            <a href="https://www.alpitronic.it/" target="_blank">
+                <img src="./images/alpitronic.png" alt="Alpitronic" class="portfolio-logo">
+            </a>
+            <div class="portfolio-info">
+                <p><strong>2022</strong> | <span data-lang="en">Internship</span>
+                <span data-lang="cs" style="display: none;">Stáž</span></p>
+                <p data-lang="en">Designed and implemented dashboards to visualize and analyze sales data trends.</p>
+                <p data-lang="cs" style="display: none;">Návrhy a implementace dashboardů pro vizualizaci a analýzu trendů v prodejních datech.</p>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <!-- DOWNLOAD CV BUTTON -->
+    <div class="cv-download">
+        <a href="./documents/KafkaM_CV.docx" download class="btn-cv">
+            <i class="fa fa-download" aria-hidden="true"></i> <span data-lang="en">Download My CV</span><span data-lang="cs" style="display: none;">Stáhnout mé CV</span>
+        </a>
+    </div>
+</section>
+
+        
+        
+
+        
+
+
+
+
+
+
+    
+        
+
+
+<section class="hobbies container" id="Hobbies">
+
+    <div class="header-info">
+        <h4 data-lang="en">HOBBIES</h4>
+        <h4 data-lang="cs" style="display: none;">KONÍČKY</h4>
+    </div>
+    <br><br>
+
+    <div class="grid-hobbies">
+        <div class="hobby-column">
+            <div class="hobby-item">
+                <img src="./images/floorball.svg" alt="Floorball">
+                <div>
+                    <h6 data-lang="en">Floorball</h6>
+                    <h6 data-lang="cs" style="display: none;">Florbal</h6>
+                    <p data-lang="en">Coppa Italia champion, youth team runner-up in Czech Republic, currently playing for SSV Bozen.</p>
+                    <p data-lang="cs" style="display: none;">Vítěz Coppa Italia, vicemistr mládežnické ligy v České republice, aktuálně hráč SSV Bozen.</p>
+                </div>
+            </div>
+            <div class="hobby-item">
+                <img src="./images/coach.png" alt="Coach">
+                <div>
+                    <h6 data-lang="en">Coach</h6>
+                    <h6 data-lang="cs" style="display: none;">Trenér</h6>
+                    <p data-lang="en">Licensed trainer with experience in Czech and Italian academy teams.</p>
+                    <p data-lang="cs" style="display: none;">Licencovaný trenér s praxí v českých a italských akademických týmech.</p>
+                </div>
+            </div>
+            <div class="hobby-item">
+                <img src="./images/ski.png" alt="Skiing">
+                <div>
+                    <h6 data-lang="en">Skiing Instructor</h6>
+                    <h6 data-lang="cs" style="display: none;">Instruktor lyžování</h6>
+                    <p data-lang="en">Certified instructor with experience in primary school skiing courses.</p>
+                    <p data-lang="cs" style="display: none;">Certifikovaný instruktor s praxí na lyžařských kurzech základních škol.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hobby-column">
+            <div class="hobby-item">
+                <img src="./images/health.png" alt="Healthy Lifestyle">
+                <div>
+                    <h6 data-lang="en">Healthy Lifestyle</h6>
+                    <h6 data-lang="cs" style="display: none;">Zdravý životní styl</h6>
+                    <p data-lang="en">As a Type 1 diabetic, staying active helps me manage my condition.</p>
+                    <p data-lang="cs" style="display: none;">Jako diabetik 1. typu mi aktivní životní styl pomáhá zvládat mou nemoc.</p>
+                </div>
+            </div>
+            <div class="hobby-item">
+                <img src="./images/sports.png" alt="Other Sports">
+                <div>
+                    <h6 data-lang="en">Other Sports</h6>
+                    <h6 data-lang="cs" style="display: none;">Další sporty</h6>
+                    <p data-lang="en">Actively playing volleyball, tennis, and doing fitness.</p>
+                    <p data-lang="cs" style="display: none;">Aktivně hraji volejbal, tenis a věnuji se také fitness.</p>
+                </div>
+            </div>
+            <div class="hobby-item">
+                <img src="./images/music.png" alt="Music">
+                <div>
+                    <h6 data-lang="en">Music</h6>
+                    <h6 data-lang="cs" style="display: none;">Hudba</h6>
+                    <p data-lang="en">Playing piano since childhood, performed solo & in a Rammstein revival band.</p>
+                    <p data-lang="cs" style="display: none;">Hraji na klavír od dětství, vystupoval jsem sólově i v revival kapele Rammstein.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <!-- CENTERED ORGANIZATION LOGOS -->
+    <div class="organization-logos">
+        <a href="https://www.ssvbozen.it/" target="_blank">
+            <img src="./images/ssv.jpg" alt="SSV Bozen Logo">
+        </a>
+        <a href="https://www.tatranflorbal.cz/" target="_blank">
+            <img src="./images/tatran.jpg" alt="Czech Floorball Association">
+        </a>
+        <a href="https://rookiecamp.cz/martin-kafka-nikdy-jsem-se-nebal-jet-na-rookac-sam/" target="_blank">
+            <img src="./images/rookie.jpg" alt="Skiing Association">
+        </a>
+        <a href="https://zscvrch.cz/" target="_blank">
+            <img src="./images/cerv.png" alt="Rammstein Revival">
+        </a>
+    </div>
+
+    <br><br>
+
+    <!-- CONTAINER FOR TWO IMAGES AT THE END OF HOBBIES -->
+    <div class="hobbies-images">
+        <img src="./images/1.jpg" alt="First Image">
+        <img src="./images/2.jpg" alt="Second Image">
+    </div>
+</section>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+<section class="contact container" id="contact">
+    <div class="header-info">
+        <h4 data-lang="en">CONTACT</h4>
+        <h4 data-lang="cs" style="display: none;">KONTAKT</h4>
+        <br>
+        
+        <p>
+            <a href="mailto:martinkafka9@gmail.com">
+                <i class="fa fa-envelope" aria-hidden="true" style="margin-right: 5px;"></i>
+                martinkafka9@gmail.com
+            </a>
+        </p>
+    
+        <p>
+            <i class="fa fa-phone"></i>
+            <tt itemprop="telephone">+420 739-107-540</tt>
+        </p>
+        <br>
+    </div>
+</section>
+
+        
+
+    </main>
+
+    <footer>
+        <div class="container footer-info ">
+            <div class="scroll-up">
+                <a href="#"><i class="fas fa-angle-up"></i></a>
+                <h6 data-lang="en">BACK TO TOP</h6>
+                <h6 data-lang="cs" style="display: none;">NAHORU</h6>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=100011602069253" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://github.com/makafkartin88" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/makafkartin/" target="_blank"><i class="fab fa-instagram" ></i></a>
+                <a href="https://www.linkedin.com/in/martin-kafka-495268251/?trk=people-guest_people_search-card&originalSubdomain=cz" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+          
+        </div>
+
+    </footer>
+    <script>
+        let navbar = document.querySelector(".nav-links")
+        let humbergur = document.querySelector(".humburger")
+        let icons = document.querySelectorAll("i")
+
+        humbergur.addEventListener('click', function(event) {
+            let isvible = navbar.getAttribute('data-visible');
+            if (isvible == 'true') {
+                navbar.setAttribute('data-visible', 'false');
+                icons[0].setAttribute('data-visible', 'true');
+                icons[1].setAttribute('data-visible', 'false')
+            } else {
+                navbar.setAttribute('data-visible', 'true');
+                icons[0].setAttribute('data-visible', 'false');
+                icons[1].setAttribute('data-visible', 'true')
+            }
+        })
+    </script>
+
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const lang = new URLSearchParams(window.location.search).get("lang") || "en"; // Výchozí jazyk: angličtina
+        document.querySelectorAll("[data-lang]").forEach(el => {
+            el.style.display = el.getAttribute("data-lang") === lang ? "block" : "none";
+        });
+    });
+    </script>
+    </body>
+    </html>
+    
+
+</body>
+
+</html>
