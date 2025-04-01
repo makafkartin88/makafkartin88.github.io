@@ -783,12 +783,12 @@ body {
 }
 
 header {
-    background-color: black;
+    background-color: #1d1d1d;
     padding: 2rem 0 4rem 0; /* nahoře 4rem, dole 8rem pro přesah */
     position: relative;
     z-index: 10;
 }
 
 html {
-    background-color: black; /* přebarví i úplný vršek stránky */
+    background-color: #1d1d1d; /* přebarví i úplný vršek stránky */
 }
