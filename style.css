@@ -14,6 +14,8 @@ body {
 header {
     margin-top: 2rem;
     height: 2.875rem;
+    background-color: #000000;
+    
 }
 
 .container {
@@ -71,9 +73,13 @@ header {
 }
 
 .hero {
+    /*
+toto je to s tou fotkou
+    */
     margin-top: 2.125rem;
     display: flex;
     flex-direction: column;
+    background-color: #d7d7d7;
 }
 
 .hero-top {
@@ -147,7 +153,10 @@ header {
     margin-right: 8rem;
     width: 400px;
     height: 468px;
+    border-radius: 20px; /* zaoblení rohů pro zmírnění tvrdého vzhledu */
+    background-color: transparent; /* pro jistotu */
 }
+
 
 .contact-me {
     display: flex;
@@ -680,10 +689,11 @@ footer {
 
 .language-switcher {
     position: absolute;
-    top: 10px;
+    top: 5px;
     right: 20px;
+    bottom: 10px;
     display: flex;
-    gap: 10px;
+    gap: 15px;
 }
 
 .flag-icon {
@@ -691,6 +701,9 @@ footer {
     height: auto;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
+    filter: brightness(1.2);
+    border: 1px solid white;
+    border-radius: 4px;
 }
 
 .flag-icon:hover {
@@ -699,3 +712,83 @@ footer {
 
 
 
+
+
+header {
+    background-color: black;
+    padding: 5rem 0;
+    position: relative;
+}
+
+/* Vnitřní wrapper */
+.header-content {
+    position: relative;
+    display: flex;
+    justify-content: center; /* vycentrujeme navbar */
+    align-items: center;
+}
+
+/* Navigace */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.0rem;
+    align-items: center;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 0;
+}
+
+.nav-links .btn {
+    background-color: white;
+    color: black;
+    padding: 10px 25px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+/* Vlaječky absolutně doprava nahoru */
+.language-switcher {
+    position: absolute;
+    top: 0.0rem;
+    right: 1rem;
+    display: flex;
+    gap: 10px;
+}
+
+.flag-icon {
+    width: 30px;
+    border-radius: 4px;
+    border: 1px solid white;
+    filter: brightness(1.2);
+}
+
+
+
+body {
+    margin: 0; /* odstranit bílé/šedé okraje */
+}
+
+header {
+    background-color: black;
+    padding: 2rem 0 4rem 0; /* nahoře 4rem, dole 8rem pro přesah */
+    position: relative;
+    z-index: 10;
+}
+
+html {
+    background-color: black; /* přebarví i úplný vršek stránky */
+}

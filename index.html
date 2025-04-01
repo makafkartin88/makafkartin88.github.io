@@ -6,38 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 
 <body>
     <header>
-        <div class="language-switcher">
-            <a href="?lang=cs"><img src="./images/czech-flag.png" alt="Czech" class="flag-icon"></a>
-            <a href="?lang=en"><img src="./images/uk-flag.png" alt="English" class="flag-icon"></a>
+        <div class="header-content container">
+            <nav class="navbar">
+                <ul class="nav-links" data-visible="false">
+                    <li><a href="#About" data-lang="en">My Story</a><a href="#About" data-lang="cs" style="display: none;">Můj příběh</a></li>
+                    <li><a href="#Skills" data-lang="en">Skills</a><a href="#Skills" data-lang="cs" style="display: none;">Dovednosti</a></li>
+                    <li><a href="#portfolio" data-lang="en">Portfolio</a><a href="#portofolio" data-lang="cs" style="display: none;">Portfolio</a></li>
+                    <li><a href="#Hobbies" data-lang="en">Hobbies</a><a href="#Hobbies" data-lang="cs" style="display: none;">Koníčky</a></li>
+                    <li><a class="btn" href="#contact" data-lang="en">Contact Me</a><a class="btn" href="#contact" data-lang="cs" style="display: none;">Kontakt</a></li>
+                </ul>
+                <div class="language-switcher">
+                    <a href="?lang=cs"><img src="./images/czech-flag.png" alt="Czech" class="flag-icon"></a>
+                    <a href="?lang=en"><img src="./images/uk-flag.png" alt="English" class="flag-icon"></a>
+                </div>
+            </nav>
         </div>
-        
-        <div class="humburger">
-            <i class="fa-solid fa-bars-staggered" data-visible="true"></i>
-            <i class="fa-solid fa-xmark" data-visible="false"></i>
-        </div>
-        <nav class="container navbar">
-
-
-           
-
-        
-            <ul class="nav-links" data-visible="false">
-                <li><a href="#About" data-lang="en">My Story</a><a href="#About" data-lang="cs" style="display: none;">Můj příběh</a></li>
-                <li><a href="#Skills" data-lang="en">Skills</a><a href="#Skills" data-lang="cs" style="display: none;">Dovednosti</a></li>
-                <li><a href="#portfolio" data-lang="en">Portfolio</a><a href="#portofolio" data-lang="cs" style="display: none;">Portfolio</a></li>
-                <li><a href="#Hobbies" data-lang="en">Hobbies</a><a href="#Hobbies" data-lang="cs" style="display: none;">Koníčky</a></li>
-                <a class="btn" href="#contact" data-lang="en">Contact Me</a>
-                <a class="btn" href="#contact" data-lang="cs" style="display: none;">Kontakt</a>
-            </ul>
-            
-        </nav>
     </header>
+    
+    
+    
+
     
     <main>
 
@@ -46,7 +39,7 @@
 
        <section class="hero"> 
         <div class="bg-img">
-            <img src="./images/bg.png" alt="">
+           <!-- <img src="./images/bg.png" alt=""> -->
         </div>
     <div class="hero-top container">
         <div class="content">
@@ -74,7 +67,7 @@
         </div>
 
         <div class="person-img">
-            <img src="./images/person.png" alt="person">
+            <img src="./images/person-clear.png" alt="person">
         </div>
     </div>
 </section>
@@ -381,7 +374,7 @@
                 <img src="./images/alpitronic.png" alt="Alpitronic" class="portfolio-logo">
             </a>
             <div class="portfolio-info">
-                <p><strong>2022</strong> | <span data-lang="en">Internship</span>
+                <p><strong>2025</strong> | <span data-lang="en">Internship</span>
                 <span data-lang="cs" style="display: none;">Stáž</span></p>
                 <p data-lang="en">Designed and implemented dashboards to visualize and analyze sales data trends.</p>
                 <p data-lang="cs" style="display: none;">Návrhy a implementace dashboardů pro vizualizaci a analýzu trendů v prodejních datech.</p>
