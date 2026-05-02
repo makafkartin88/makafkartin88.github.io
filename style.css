@@ -187,7 +187,7 @@ header {
    ======================== */
 .hero {
     background-color: var(--bg);
-    padding: 5rem 0 4.5rem;
+    padding: 5rem 0 0;
 }
 
 .bg-img {
@@ -738,7 +738,7 @@ header {
    CONTACT + FOOTER (unified dark end)
    ======================== */
 .contact {
-    padding: 6rem 0 4rem;
+    padding: 5rem 0;
     background-color: var(--bg-dark);
     color: #fff;
 }
@@ -752,28 +752,48 @@ header {
 }
 
 .contact .header-info {
-    margin-bottom: 0;
+    margin-bottom: 2.5rem;
 }
 
-.contact a {
+.contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding: 1.5rem 2.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius);
+    background: rgba(255, 255, 255, 0.04);
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.contact-links a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.75);
-    font-size: 1rem;
+    font-size: 0.95rem;
     transition: color var(--transition);
     display: inline-flex;
     align-items: center;
     gap: 0.6rem;
+    white-space: nowrap;
 }
 
-.contact a:hover {
+.contact-links a:hover {
     color: var(--accent);
 }
 
-.contact p {
-    font-size: 1rem;
+.contact-links .divider {
+    width: 1px;
+    height: 1.5rem;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.contact-links .phone {
     color: rgba(255, 255, 255, 0.5);
-    margin-top: 0.875rem;
-    display: flex;
+    font-size: 0.95rem;
+    display: inline-flex;
     align-items: center;
     gap: 0.6rem;
 }
