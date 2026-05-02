@@ -225,6 +225,7 @@ header {
     line-height: 1.02;
     color: var(--text);
     letter-spacing: -0.02em;
+    font-variant-ligatures: none;
 }
 
 .info h6 {
