@@ -28,8 +28,8 @@
                     <i class="fa-solid fa-xmark" data-visible="false"></i>
                 </button>
                 <div class="language-switcher">
-                    <a href="?lang=cs"><img src="./images/czech-flag.png" alt="Czech" class="flag-icon"></a>
-                    <a href="?lang=en"><img src="./images/uk-flag.png" alt="English" class="flag-icon"></a>
+                    <a href="?lang=cs" data-lang-switch="cs" aria-label="Přepnout na češtinu"><img src="./images/czech-flag.png" alt="Čeština" class="flag-icon"></a>
+                    <a href="?lang=en" data-lang-switch="en" aria-label="Switch to English"><img src="./images/uk-flag.png" alt="English" class="flag-icon"></a>
                 </div>
             </nav>
         </div>
@@ -63,7 +63,7 @@
                 </div>
 
                 <div class="person-img">
-                    <img src="./images/person-clear.png" alt="Martin Kafka">
+                    <img src="./images/person-graduation.png" alt="Martin Kafka">
                 </div>
             </div>
         </section>
@@ -227,7 +227,7 @@
             <div class="header-img"></div>
 
             <!-- EDUCATION SECTION -->
-            <div class="portfolio-section">
+            <div class="portfolio-section portfolio-section--edu">
                 <h4 data-lang="en">EDUCATION</h4>
                 <h4 data-lang="cs" style="display: none;">VZDĚLÁNÍ</h4>
 
@@ -552,9 +552,31 @@
     <script>
         // Language switcher
         document.addEventListener("DOMContentLoaded", function () {
-            const lang = new URLSearchParams(window.location.search).get("lang") || "en";
-            document.querySelectorAll("[data-lang]").forEach(el => {
-                el.style.display = el.getAttribute("data-lang") === lang ? "" : "none";
+            const switches = document.querySelectorAll("[data-lang-switch]");
+
+            function applyLang(lang) {
+                document.documentElement.lang = lang;
+                document.querySelectorAll("[data-lang]").forEach(el => {
+                    el.style.display = el.getAttribute("data-lang") === lang ? "" : "none";
+                });
+                switches.forEach(a => {
+                    a.classList.toggle("is-active", a.getAttribute("data-lang-switch") === lang);
+                });
+            }
+
+            applyLang(new URLSearchParams(window.location.search).get("lang") || "en");
+
+            // Switch in place so the reader keeps their scroll position
+            switches.forEach(a => {
+                a.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    const lang = a.getAttribute("data-lang-switch");
+                    applyLang(lang);
+                    history.replaceState(null, "", "?lang=" + lang);
+                    navbar.setAttribute("data-visible", "false");
+                    if (hamburgerIcons[0]) hamburgerIcons[0].setAttribute("data-visible", "true");
+                    if (hamburgerIcons[1]) hamburgerIcons[1].setAttribute("data-visible", "false");
+                });
             });
         });
     </script>
